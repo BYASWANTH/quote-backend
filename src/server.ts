@@ -7,7 +7,7 @@ const server = Fastify({ logger: true });
 async function start() {
   try {
     await server.register(cors, {
-      origin: ['http://localhost:3000', 'http://localhost:5173'],
+      origin: ['http://localhost:3000', 'http://localhost:5173', 'https://quote-collector-three.vercel.app'],
       methods: ['GET', 'POST', 'DELETE'],
     });
 
